@@ -7,9 +7,24 @@
     <link rel="stylesheet" href="./css/base.css">
 </head>
 <body>
+
+    <h1>git提交代码的基本操作</h1>
+
     <p>git操作,可通过命令面板创建文件夹: mkdir css(创建一个名为css的文件夹)</p>
 
+    <p>git init 初始化本地git仓库</p>
+    <p>git status 查看文件列表(若文件存在,则文件名红色,若文件存在并添加到暂存区之后文件名绿色)</p>
+    <p>git add .  添加所有文件到本地暂存区</p>
+    <p>git commit -m "第一次提交项目文件" 将文件提交到本地git仓库</p>
+    <p>git branch main  创建主分支   (可跳过)</p>
+    <p>git remote add origin ***   (远程仓库地址)</p>
+    <p>git push -u origin master   推送文件到远程git仓库主分支上</p>
 
+
+    <h3>第二次提交文件时(修改项目或新增)</h3>
+    <p>git add . 添加所有文件到本地暂存区</p>
+    <p>git commit -m "第二次提交项目文件(修改之后的版本)"</p>
+    <h3>直接提交文件到远程git仓库昂主分支上</h3>
     <script>
         var ce=function(tagName){
             return document.createElement(tagName);
